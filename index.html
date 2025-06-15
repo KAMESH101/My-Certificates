@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Certificates</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .certificates-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .certificate {
+      background: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .certificate:hover {
+      transform: scale(1.03);
+    }
+    .certificate img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .certificate p {
+      padding: 10px;
+      margin: 0;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Certificates</h1>
+    <p>A showcase of my achievements</p>
+  </header>
+
+  <div class="certificates-container">
+    <div class="certificate">
+      <img src="Html.jpg" alt="Front End Development (Html)" />
+      <p> Front End Development (Html)- Great Learning</p>
+    </div>
+    <div class="certificate">
+      <img src="Fullstack Workshop.jpg" alt="Fullstack Workshop" />
+      <p>Fullstack Workshop- Credo Systemz</p>
+    </div>
+    <div class="certificate">
+      <img src="Nptel.jpg" alt="Introduction to Industry 4.0 and Industrial Internet of Things." />
+      <p>Introduction to Industry 4.0 and Industrial Internet of Things- Nptel</p>
+    </div>
+    
+  </div>
+</body>
+</html>
